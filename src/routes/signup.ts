@@ -40,7 +40,7 @@ router.post(
 				id: user.id,
 				email: user.email,
 			},
-			'sljslk'
+			process.env.JWT_KEY! // Exclamation says to Typescript that a check was done in start() app
 		);
 
 		//Store it on session object
