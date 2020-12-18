@@ -2,9 +2,8 @@ import express, { Request, Response } from 'express';
 import { body } from 'express-validator';
 import jwt from 'jsonwebtoken';
 
-import { validateRequest } from '@sirmctickets/commontickets';
+import { validateRequest, BadRequestError } from '@sirmctickets/commontickets';
 import { User } from '../models/user';
-import { BadRequestError } from '@sirmctickets/commontickets';
 
 const router = express.Router();
 
